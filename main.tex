@@ -1,0 +1,198 @@
+% CUHKexam.tex (Version 1.0)
+% ===============================================================================
+% The Chinese University of Hong Kong Exam LaTeX template.
+% 2024, Yuxi Chen, CUHK Dept. of Psychology
+% Modified based on the 2004; 2009, Timothy Kam, ANU School of Economics ANU Exam template
+% Licence type: Free as defined in the GNU General Public Licence: http://www.gnu.org/licenses/gpl.html
+
+\documentclass[a4paper,12pt,fleqn]{article}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+% Insert your course information here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\institution}{THE CHINESE UNIVERSITY OF HONG KONG}
+\newcommand{\titlehd}{COURSE TITLE}
+\newcommand{\examtype}{Exam Type}
+\newcommand{\examdate}{Exam Date}
+\newcommand{\examcode}{Course Code}
+\newcommand{\version}{A}
+\newcommand{\readtime}{15 Minutes}
+\newcommand{\writetime}{45 Minutes}
+\newcommand{\questionnumber}{4}
+\newcommand{\materials}{Non-programmable Calculators}
+\newcommand{\lastwords}{End of Examination}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setcounter{MaxMatrixCols}{10}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+% Margins and footer style
+\setlength{\topmargin}{0cm}
+\setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{16cm}
+\pagestyle{fancy}
+\lhead{} 
+\chead{} 
+\rhead{} 
+\lfoot{} 
+\cfoot{\footnotesize{Page \thepage \ of \pageref{finalpage} -- \titlehd \ (\examcode)}} 
+\rfoot{} 
+
+
+\renewcommand{\headrulewidth}{0pt} %Do not print a rule below the header
+\renewcommand{\footrulewidth}{0pt}
+
+
+\begin{document}
+
+% Title page
+
+% Logo
+\begin{center}
+    \includegraphics[width=4cm]{Emblem_of_CU.png}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+\Large\textbf{\institution}
+\end{center}
+%\vspace{0.25cm}
+
+\begin{center}
+\textit{ \examtype -- \examdate}
+\end{center}
+\vspace{0.25cm}
+
+\begin{center}
+\large\textbf{\titlehd}
+\end{center}
+
+\begin{center}
+\textbf{\examcode}
+\end{center}
+
+
+
+\begin{center}
+\large\textbf{Version: \version}
+\end{center}
+\vspace{0.25cm}
+\begin{center}
+\textbf{Number of Questions: \questionnumber}
+\end{center}
+\begin{center}
+\textbf{Writing Time:  \writetime}
+\end{center}
+\begin{center}
+\textbf{Permitted Materials: \materials}
+\end{center}
+\vspace{0.5cm}
+
+\noindent Name: \underline{\hspace{5cm}} \hspace{2cm} Student ID: \underline{\hspace{5cm}} \hspace{0.5cm} 
+\vspace{0.5cm}
+
+\noindent\underline{\bf INSTRUCTIONS}
+\vspace{0.25cm}
+
+% Instruction
+
+\begin{enumerate}
+\item This quiz contains {\bf 5} questions and comprises 
+{\bf 5} printed pages.
+\item Please write down your answers on the answer sheet. 
+\item Please write down your version number on the answer sheet.
+\item This is a {\bf CLOSE BOOK} quiz.
+\item {\bf Return BOTH sheets (question and answer sheets) to the tutor at the end of the quiz}
+\end{enumerate}
+
+% End title page
+
+% Question page
+
+\newpage
+% Question type title
+\paragraph{\textbf{\underline{Question Type Title}}}
+
+~\\~\\ \textit{Write your specification of this type of questions here.}
+
+% Multiple-choice questions
+\bigskip
+\paragraph{\textbf{Question 1}}
+This is an example of a multiple-choice question. For blank in question use \underline{\hspace{2cm}}.  
+\begin{enumerate}[label=\alph*.]
+    \item option 1
+    \item option 2
+    \item option 3
+    \item option 4
+\end{enumerate}
+
+% Fill-in-blank questions
+\newpage
+\paragraph{\textbf{Question 2}}
+This is an example of a fill-in-blank question
+\begin{enumerate}
+    \item The process of photosynthesis occurs in \underline{\hspace{5cm}}.
+    \item Water freezes at \underline{\hspace{2cm}} degrees Celsius.
+\end{enumerate}
+
+% True-or-False questions
+\newpage
+\paragraph{\textbf{Question 3}}
+This is an example of a True or False question. Mark the following True or False
+\begin{enumerate}
+    \item \underline{\hspace{0.5cm}} The Earth revolves around the Sun.
+    \item \underline{\hspace{0.5cm}} Water boils at 100 degrees Celsius at standard atmospheric pressure.
+    \item \underline{\hspace{0.5cm}} The capital of Australia is Sydney.
+    \item \underline{\hspace{0.5cm}} All cats are black.
+\end{enumerate}
+
+% Short answer questions
+\newpage
+\paragraph{\textbf{Question 4}}\hfill (12 marks)\\
+This is an example of a short answer question with sub-questions.
+\begin{enumerate}
+    \item Part 1 of question. \hfill (2 marks)
+    \item Part 2 of question. \hfill (4 marks)
+    \item Part 3 of question. \hfill (6 marks)
+\end{enumerate}
+
+
+
+\begin{center}
+\vspace{3cm}
+--------- \textit{\lastwords} ---------
+\end{center}
+
+
+\label{finalpage}
+
+\end{document}
